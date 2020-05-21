@@ -50,8 +50,6 @@ class Checkout(BasePage):
         payment.click()
         return payment
 
-    def close_modal_if_exist(self):
-        try:
-            self.check_element_clickable(CheckoutLocators.CLOSE_MODAL_BUTTON).click()
-        except:
-            print("modal popup hasn't appeared")
+    def close_modal(self):
+        self.check_element_clickable(CheckoutLocators.CLOSE_MODAL_BUTTON).click()
+

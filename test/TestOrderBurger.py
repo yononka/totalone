@@ -33,7 +33,7 @@ def test_order_slamburger(browser):
     checkout_page.choose_date()
     checkout_page.choose_time()
     checkout_page.continue_to_payment()
-    checkout_page.close_modal_if_exist()
+    checkout_page.close_modal()
 
 
 
